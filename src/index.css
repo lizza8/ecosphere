@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Source+Serif+Pro:wght@400;500&family=Fira+Code:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: 265 70% 15%;
+    --color-foreground: 185 100% 68%;
+    --color-primary: 185 100% 55%;
+    --color-primary-foreground: 240 9% 8%;
+    --color-secondary: 265 70% 25%;
+    --color-secondary-foreground: 315 100% 70%;
+    --color-tertiary: 215 100% 18%;
+    --color-tertiary-foreground: 215 100% 60%;
+    --color-neutral: 240 9% 6%;
+    --color-neutral-foreground: 0 0% 95%;
+    --color-muted: 240 8% 18%;
+    --color-muted-foreground: 240 8% 75%;
+    --color-accent: 315 100% 60%;
+    --color-accent-foreground: 0 0% 98%;
+    --color-destructive: 0 84% 60%;
+    --color-destructive-foreground: 0 0% 98%;
+    --color-border: 240 8% 25%;
+    --color-input: 240 8% 25%;
+    --color-ring: 185 100% 65%;
+    --color-card: 240 9% 12%;
+    --color-card-foreground: 0 0% 95%;
+    --color-popover: 240 9% 12%;
+    --color-popover-foreground: 0 0% 95%;
+    --color-success: 140 100% 45%;
+    --color-warning: 25 100% 55%;
+    --color-cyan: 185 100% 55%;
+    --color-magenta: 315 100% 60%;
+    --color-violet: 265 70% 20%;
+    --color-blue: 215 100% 60%;
+    --color-lime: 90 100% 65%;
+    --color-hero: 185 100% 90%;
+    --color-navbar: 315 100% 80%;
+    --font-sans: "Geist", "DM Sans", sans-serif;
+    --font-serif: "Source Serif Pro", serif;
+    --font-mono: "Fira Code", monospace;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply text-body;
+  }
+
+  h1 {
+    @apply text-h1;
+  }
+
+  h2 {
+    @apply text-h2;
+  }
+
+  h3 {
+    @apply text-h3;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
